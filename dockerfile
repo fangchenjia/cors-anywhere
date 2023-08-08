@@ -3,6 +3,7 @@ FROM node:12.18.3-alpine3.12
 WORKDIR /app
 COPY . .
 RUN npm install
+ENV PORT=3010
 EXPOSE 3010
 CMD ["node", "server.js"]
 
